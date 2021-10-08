@@ -16,4 +16,5 @@ def obesity(excelfile="Obes-phys-acti-diet-eng-2014-tab.xls", nogui = False):
     print('hello')
     
     
-    obesity()
+    
+obesity()

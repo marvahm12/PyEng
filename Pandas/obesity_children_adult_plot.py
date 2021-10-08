@@ -16,26 +16,15 @@ def obesity(excelfile="Obes-phys-acti-diet-eng-2014-tab.xls", nogui = False):
     data_age.dropna(inplace=True)
     data_age.set_index('Year', inplace=True)
 
-    #plot
-    #data_age.plot()
-    #if not nogui:
-    #    plt.show()
 
     # Plotting everything cause total to override everything. So drop it.
     # Drop the total column and plot
-    data_age_minus_total = data_age.drop('Total', axis = 1)
-    data_age_minus_total.plot()
-    #if not nogui:
-    #    plt.show()
-    #    plt.close()
+    #data_age_minus_total = data_age.drop('Total', axis = 1)
+    #data_age_minus_total.plot()
 
     #Plot children vs adults
     data_age['Under 16'].plot(label = "Under 16")
-    #print(data_age['Under 16'])
-
     data_age['25-34'].plot(label = "25-34")
-    #print(data_age['25-34'])
-
     plt.legend(loc="upper right")
     if not nogui:
         plt.show()

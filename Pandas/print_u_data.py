@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-f = open("u.data", "r")
+f = open("movie_lens/u.data", "r")
 data = f.read()
 f.close()
 
